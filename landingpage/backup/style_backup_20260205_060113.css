@@ -713,207 +713,25 @@ body.dark-mode .stat-card {
   background-color: #2d2d2d !important;
 }
 
-/* ===== ZAMBIA MAP STYLES ===== */
-.map-container {
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9) 0%, rgba(232, 247, 237, 0.9) 100%);
-  border-radius: 15px;
-  border: 1px solid rgba(46, 139, 87, 0.2);
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-body.dark-mode .map-container {
-  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(46, 139, 87, 0.1) 100%);
-  border-color: rgba(46, 139, 87, 0.3);
+body.dark-mode .bg-light {
+  background-color: #1a1a1a !important;
 }
 
-.zambia-map {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(to bottom right, #f8f9fa, #e8f7ed);
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 2rem auto;
-  border: 2px solid #2E8B57;
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
-body.dark-mode .zambia-map {
-  background: linear-gradient(to bottom right, #2d2d2d, #1a3d2c);
-  border-color: #2E8B57;
-}
-
-.map-region {
-  position: absolute;
-  border-radius: 8px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #2E8B57;
+.dark-mode-toggle {
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  font-weight: bold;
-  color: #2E8B57;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  min-width: 100px;
-}
-
-body.dark-mode .map-region {
-  background: rgba(46, 139, 87, 0.2);
-  color: #fff;
-  border-color: #4CAF50;
-}
-
-.map-region:hover {
-  transform: scale(1.1);
-  background: #2E8B57;
-  color: white !important;
-  z-index: 100;
-  box-shadow: 0 6px 15px rgba(46, 139, 87, 0.4);
-}
-
-.map-region.active {
-  background: #2E8B57 !important;
-  color: white !important;
-  animation: pulse 1.5s infinite;
-}
-
-.map-region::after {
-  content: attr(data-projects);
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: #FF6B6B;
-  color: white;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.region-details {
-  margin-top: 20px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  border-left: 4px solid #2E8B57;
-  display: none;
-  animation: slideIn 0.3s ease;
-}
-
-body.dark-mode .region-details {
-  background: #2d2d2d;
-  border-left-color: #4CAF50;
-}
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== TESTIMONIALS STYLES ===== */
-.testimonials-section {
-  background: linear-gradient(135deg, rgba(46, 139, 87, 0.05) 0%, rgba(32, 178, 170, 0.05) 100%);
-}
-
-body.dark-mode .testimonials-section {
-  background: linear-gradient(135deg, rgba(46, 139, 87, 0.1) 0%, rgba(32, 178, 170, 0.1) 100%);
-}
-
-.testimonial-card {
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  margin: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  border: 1px solid rgba(46, 139, 87, 0.1);
-  height: 100%;
-}
-
-body.dark-mode .testimonial-card {
-  background: #2d2d2d;
-  border-color: rgba(46, 139, 87, 0.3);
-}
-
-.testimonial-text {
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.testimonial-text::before {
-  content: '"';
-  font-size: 4rem;
-  color: rgba(46, 139, 87, 0.2);
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-body.dark-mode .testimonial-author {
-  border-top-color: rgba(255,255,255,0.1);
-}
-
-.author-avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 15px;
-  border: 3px solid #2E8B57;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.author-info h5 {
-  margin-bottom: 5px;
-  color: #2E8B57;
-}
-
-body.dark-mode .author-info h5 {
-  color: #4CAF50;
-}
-
-.testimonial-stars {
-  color: #FFD700;
-  margin-bottom: 15px;
-}
-
-.testimonial-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 10px;
-}
-
-.testimonial-prev,
-.testimonial-next {
-  background: #2E8B57;
-  color: white;
   border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.testimonial-prev:hover,
-.testimonial-next:hover {
-  background: #248049;
-  transform: scale(1.1);
+  background: transparent;
+  color: #6c757d;
+  font-size: 1.2rem;
 }
